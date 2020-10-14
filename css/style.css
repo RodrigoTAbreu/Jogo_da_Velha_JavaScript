@@ -1,0 +1,29 @@
+body{ /*Alinhando tudo que está no  Body*/
+   text-align: center; 
+}
+
+.quadrado{
+    text-align: center;
+    width: 50px;
+    background: #93A5CF /* #E4EFE9*/; 
+    display: inline-block; /*ocupa o espaço na linha de seu conteudo*/
+    padding: 40px; /*conteudo seja espaçado por uma margem interna*/
+    font-size: 60px; /*tamanho da fonte*/
+    margin: 5px; /*margem dos elementos que estão fora do conteúdo*/
+    cursor: pointer; /*tipo da seta do mouse*/
+    color: #eee; /*cor do texto*/
+
+}
+
+.jogador, .vencedor{
+    font-size: 30px;
+    margin-top: 18px;
+
+}
+button{
+    margin-top: 18px;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    cursor:pointer;
+}
