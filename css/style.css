@@ -5,7 +5,7 @@ body{ /*Alinhando tudo que está no  Body*/
 .quadrado{
     text-align: center;
     width: 50px;
-    background: #93A5CF /* #E4EFE9*/; 
+    background: #c0cdeb /* #E4EFE9*/; 
     display: inline-block; /*ocupa o espaço na linha de seu conteudo*/
     padding: 40px; /*conteudo seja espaçado por uma margem interna*/
     font-size: 60px; /*tamanho da fonte*/
