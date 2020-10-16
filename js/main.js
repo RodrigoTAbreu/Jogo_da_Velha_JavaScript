@@ -16,7 +16,8 @@ function escolherquadrado(id){ /* apontamos ID no parametro para que será captu
     }
 
     quadrado.innerHTML = jogador; /*alterando o quadrado para o valor de jogador */
-    quadrado.style.color = '#eee';
+    quadrado.style.color = '#c0cdeb';
+    quadrado.style.background = '#000';
 
     if (jogador === 'X'){
         jogador = '0';
@@ -100,9 +101,13 @@ function mudarVencedor(quadrado){
 }
 
 function mudaCorQuadrado(quadrado1,quadrado2, quadrado3){
-    quadrado1.style.color = '#0f0';
-    quadrado2.style.color = '#0f0';
-    quadrado3.style.color = '#0f0';
+    quadrado1.style.color = '#54D62D';
+    quadrado2.style.color = '#54D62D';
+    quadrado3.style.color = '#54D62D';
+    quadrado1.style.background = '#c0cdeb';
+    quadrado2.style.background = '#c0cdeb';
+    quadrado3.style.background = '#c0cdeb';
+
 }
 
 

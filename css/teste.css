@@ -1,0 +1,34 @@
+.flip-container{
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+.flipper{
+    width: 100% ;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back{
+    backface-visibility: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: #c0cdeb /* #E4EFE9*/; 
+   /* display: inline-block; /*ocupa o espaço na linha de seu conteudo*/
+    /*padding: 40px; /*conteudo seja espaçado por uma margem interna*/
+    font-size: 60px; /*tamanho da fonte*/
+    /*margin: 5px; /*margem dos elementos que estão fora do conteúdo*/
+    /*cursor: pointer; /*tipo da seta do mouse*/
+    color: rgb(83, 58, 58); /*cor do texto*/
+
+}
+.flip-container:hover, .flipper{
+    transform: rotateY(180deg);
+}
+.back{
+    transform: rotateY(180deg);
+
+}
