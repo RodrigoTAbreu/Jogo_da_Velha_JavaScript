@@ -2,6 +2,9 @@ var jogador, vencedor = null;
 var jogadorSelecionado = document.getElementById(elementid='jogador-selecionado');
 var vencedorSelecionado = document.getElementById(elementid='vencedor-selecionado');
 var quadrados = document.getElementsByClassName(classname = 'quadrado');
+var pontosX = 0;
+var pontosO = 0;
+var pontos = document.getElementById('pontos')
 
 mudarJogador( valor= 'X');
 
@@ -98,6 +101,15 @@ function checaVencedor(){
 function mudarVencedor(quadrado){
     vencedor = quadrado.innerHTML
     vencedorSelecionado.innerHTML = vencedor;
+
+    if (vencedor === 'X'){
+       pontosX = pontosX +1;
+    }else if(vencedor ==='0'){
+       pontosO = pontosO + 1
+    }
+    pontos.innerHTML = `X = ${pontosX}<br>`
+    pontos.innerHTML +=`Y = ${pontosO}<br>`
+
 }
 
 function mudaCorQuadrado(quadrado1,quadrado2, quadrado3){
@@ -129,6 +141,7 @@ function reinicar(){
         var quadrado = document.getElementById(i);
         quadrado.style.color = '#eee';
         quadrado.style.color = '#eee';
+        quadrado.style.background = '#c0cdeb';
         quadrado.innerHTML = '-';
     }
     mudarJogador(valor = 'X');

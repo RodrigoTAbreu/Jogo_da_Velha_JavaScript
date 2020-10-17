@@ -7,50 +7,65 @@
     <title>Jogo da Velha</title>
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
-    <div >
-        <div id="1" class="quadrado" onclick="escolherquadrado(this.id)">-</div> <!---com o THI ID dentro do onclick, ao clicar o java pega o ID do elemento que foi clicado.-->
-        <div id="2" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        <div id="3" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div class="box" id="pontos">
+           Pontuação:
+        </div>
     </div>
+    
     <div>
-        <div id="4" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        <div id="5" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        <div id="6" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        
-    </div>  
-    <div>
-        <div id="7" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        <div id="8" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        <div id="9" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
-        
-    </div>
+            <div>
+                <div>
+                    <div id="1" class="quadrado" onclick="escolherquadrado(this.id)">-</div> <!---com o THI ID dentro do onclick, ao clicar o java pega o ID do elemento que foi clicado.-->
+                
+                    <div id="2" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                    <div id="3" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                </div>
+            </div>
+            <div>
+                <div id="4" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                <div id="5" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                <div id="6" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                
+            </div>  
+            <div>
+                <div id="7" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                <div id="8" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                <div id="9" class="quadrado" onclick="escolherquadrado(this.id)">-</div>
+                
+            </div>
 
-    <div class="jogador">
-        <label for="">
-            Jogador:
-        </label>
-        <Label id="jogador-selecionado">
-            
-        </Label>
-        
-    </div>
-    <div class="vencedor">
-        <label for="">
-            Vencedor: 
-        </label>
-        <LAbel id="vencedor-selecionado">
-            
-        </LAbel>
-        
-    </div>
-    <div>
-        <button onclick="reinicar()">
-            Reiniciar
-        </button>
-    </div>
+            <div class="jogador">
+                <label for="">
+                    Jogador:
+                </label>
+                <Label id="jogador-selecionado">
+                    
+                </Label>
+                
+            </div>
+            <div class="vencedor">
+                <label for="">
+                    Vencedor: 
+                </label>
+                <LAbel id="vencedor-selecionado">
+                    
+                </LAbel>
+                
+            </div>
+            <div>
+                <button onclick="reinicar()">
+                    Reiniciar
+                </button>
+            </div>
 
+    
+
+</div>
+
+  
+    
 
 </body>
 <script src="js/main.js"></script>
